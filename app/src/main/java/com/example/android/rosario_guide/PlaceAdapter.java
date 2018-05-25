@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.rosario_guide;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * {@link PlaceAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Place} objects.
  */
-public class PlaceAdapter extends ArrayAdapter<com.example.android.miwok.Place>  {
+public class PlaceAdapter extends ArrayAdapter<Place>  {
 
     /** Resource ID for the background color for this list of words */
     private int mColorResourceId;
@@ -26,7 +26,7 @@ public class PlaceAdapter extends ArrayAdapter<com.example.android.miwok.Place> 
      * @param places is the list of {@link Place}s to be displayed.
      * @param colorResourceId is the resource ID for the background color for this list of places
      */
-    public PlaceAdapter(Context context, ArrayList<com.example.android.miwok.Place> places, int colorResourceId) {
+    public PlaceAdapter(Context context, ArrayList<Place> places, int colorResourceId) {
         super(context, 0, places);
         mColorResourceId = colorResourceId;
     }
@@ -41,7 +41,7 @@ public class PlaceAdapter extends ArrayAdapter<com.example.android.miwok.Place> 
         }
 
         // Get the {@link Word} object located at this position in the list
-        com.example.android.miwok.Place currentPlace = getItem(position);
+        Place currentPlace = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID miwok_text_view.
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);

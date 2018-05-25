@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.rosario_guide;
 
 /**
  * {@link Place} represents a particular place in Rosario.

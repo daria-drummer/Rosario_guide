@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="category_dinner">#FD8E09</color>
+
+    <!-- Background color for the family members category -->
+    <color name="category_breakfast">#379237</color>
+
+    <!-- Background color for the colors category -->
+    <color name="category_ice_cream">#8800A0</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="category_music_and_drinks">#16AFCA</color>
+
 </resources>

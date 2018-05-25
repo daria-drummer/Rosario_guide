@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.rosario_guide;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -35,11 +35,11 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new com.example.android.miwok.DinnerFragment();
+            return new DinnerFragment();
         } else if (position == 1) {
-            return new com.example.android.miwok.BreakfastFragment();
+            return new BreakfastFragment();
         } else if (position == 2) {
-            return new com.example.android.miwok.DinnerFragment()Fragment();
+            return new DinnerFragment()Fragment();
         } else {
             return new IceCreamFragment();
         }
@@ -56,13 +56,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.category_numbers);
+            return mContext.getString(R.string.category_dinner);
         } else if (position == 1) {
-            return mContext.getString(R.string.category_family);
+            return mContext.getString(R.string.category_breakfast);
         } else if (position == 2) {
-            return mContext.getString(R.string.category_colors);
+            return mContext.getString(R.string.category_ice_cream);
         } else {
-            return mContext.getString(R.string.category_phrases);
+            return mContext.getString(R.string.category_drinks_and_music);
         }
     }
 }

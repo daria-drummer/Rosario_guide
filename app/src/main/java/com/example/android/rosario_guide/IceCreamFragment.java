@@ -1,6 +1,5 @@
 package com.example.android.rosario_guide;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -28,17 +27,17 @@ public class IceCreamFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         // Create a list of words
-        final ArrayList<com.example.android.miwok.Place> places = new ArrayList<com.example.android.miwok.Place>();
-        places.add(new com.example.android.miwok.Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new com.example.android.miwok.Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new com.example.android.miwok.Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new com.example.android.miwok.Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new com.example.android.miwok.Place("Los Jardines", "España y el Río", R.drawable.acorn);
+        final ArrayList<Place> places = new ArrayList<Place>();
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        com.example.android.miwok.PlaceAdapter adapter = new com.example.android.miwok.PlaceAdapter(getActivity(), places, R.color.category_colors);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_colors);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
