@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rosario_guide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_dinner">Dinner</string>
+    <string name="category_breakfast">Breakfast</string>
+    <string name="category_ice_cream">Ice cream</string>
+    <string name="category_drinks_and_music">Drinks and Music</string>
+</resources>
