@@ -24,20 +24,20 @@ public class IceCreamFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+        View rootView = inflater.inflate(R.layout.places_list, container, false);
 
         // Create a list of words
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn);
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_colors);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_ice_cream);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
