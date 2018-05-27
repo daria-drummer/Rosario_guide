@@ -30,7 +30,7 @@ public class DinnerFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.places_list, container, false);
 
-        // Create a list of words
+        // Create a list of places
         final ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place("Los Jardines", "España y el Río", R.drawable.jardines));
         places.add(new Place("Puerto Gaboto New", "Avenida Pellegrini 584", R.drawable.puerto));
@@ -44,16 +44,16 @@ public class DinnerFragment extends Fragment {
         places.add(new Place("Refineria Parrilla Restaurant", "Rawson 443 Bis", R.drawable.parilla));
 
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link PlaceAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
-        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_dinner);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.all_categories);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file.
+        // places_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
+        // Make the {@link ListView} use the {@link PlaceAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 

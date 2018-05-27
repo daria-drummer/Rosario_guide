@@ -6,5 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:drawSelectorOnTop="true"
-    android:divider="@color/colorPrimary"
-    android:dividerHeight="4px"/>
+    android:background="@color/colorPrimary"
+    android:divider="@color/second_text_color"
+    android:dividerHeight="1dp"/>

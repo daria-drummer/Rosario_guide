@@ -18,10 +18,9 @@ public class Place {
     /**
      * Create a new Place object.
      *
-     * @param nameOfThePlace is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param contactInfo is the word in the Miwok language
-     * @param imageResourceId is the drawable resource ID for the image associated with the word
+     * @param nameOfThePlace is the name of the bar/restaurant/cafe (depending on the category)
+     * @param contactInfo is the address of the place
+     * @param imageResourceId is the drawable resource ID for the image associated with the place
      */
     public Place(String nameOfThePlace, String contactInfo, int imageResourceId) {
         mNameOfThePlace = nameOfThePlace;
@@ -30,21 +29,21 @@ public class Place {
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the name of the place.
      */
     public String getTheNameOfThePlace() {
         return mNameOfThePlace;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the address of the place.
      */
     public String getTheContactInfo() {
         return mContactInfo;
     }
 
     /**
-     * Return the image resource ID of the word.
+     * Return the image resource ID of the place.
      */
     public int getImageResourceId() {
         return mImageResourceId;

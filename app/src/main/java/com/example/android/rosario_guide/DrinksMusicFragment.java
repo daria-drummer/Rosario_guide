@@ -27,7 +27,7 @@ public class DrinksMusicFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.places_list, container, false);
 
-        // Create a list of words
+        // Create a list of places
         final ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place("Beatmemo", "Bvd. Oroño 107", R.drawable.beatmemo));
         places.add(new Place("Rock & Feller's", "Boulevard Nicasio Orono 106", R.drawable.rock_and_fellers));
@@ -39,17 +39,17 @@ public class DrinksMusicFragment extends Fragment {
         places.add(new Place("Basquiat Street Pub", "Calle Alte G Brown 2265", R.drawable.street_pub));
         places.add(new Place("Manush", "Güemes 2330", R.drawable.manush));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link PlaceAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
-        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_music_and_drinks);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.all_categories);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file.
+        // places_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link PlaceAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Place} in the list.
         listView.setAdapter(adapter);
 
         return rootView;

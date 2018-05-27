@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="120dp"
-        android:layout_height="80dp" />
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height" />
 
     <LinearLayout
         android:id="@+id/text_container"
@@ -33,9 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:textSize="@dimen/second_text_size"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/text_color" />
+            android:textColor="@color/second_text_color" />
     </LinearLayout>
 
 </LinearLayout>

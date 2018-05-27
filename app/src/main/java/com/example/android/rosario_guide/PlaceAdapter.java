@@ -19,7 +19,7 @@ import java.util.ArrayList;
  */
 public class PlaceAdapter extends ArrayAdapter<Place>  {
 
-    /** Resource ID for the background color for this list of words */
+    /** Resource ID for the background color for this list of place */
     private int mColorResourceId;
     /**
      * Create a new {@link PlaceAdapter} object.
@@ -42,19 +42,19 @@ public class PlaceAdapter extends ArrayAdapter<Place>  {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link Word} object located at this position in the list
+        // Get the {@link Place} object located at this position in the list
         Place currentPlace = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID miwok_text_view.
+        // Find the TextView in the list_item.xml layout with the ID name_text_view.
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
-        // Get the Miwok translation from the currentWord object and set this text on
-        // the Miwok TextView.
+        // Get the name from the currentPLace object and set this text on
+        // the name TextView.
         nameTextView.setText(currentPlace.getTheNameOfThePlace());
 
-        // Find the TextView in the list_item.xml layout with the ID default_text_view.
+        // Find the TextView in the list_item.xml layout with the ID contact_text_view.
         TextView contactTextView = (TextView) listItemView.findViewById(R.id.contact_text_view);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
+        // Get the contact info from the currentPlace object and set this text on
+        // the contact TextView.
         contactTextView.setText(currentPlace.getTheContactInfo());
 
         // Find the ImageView in the list_item.xml layout with the ID image.

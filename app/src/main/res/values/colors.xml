@@ -2,7 +2,9 @@
 <resources>
     <color name="colorPrimary">#324D5C</color>
     <color name="colorPrimaryDark">#324D5C</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAccent">#F0CA4D</color>
+    <color name="colorActionBarText">#F0CA4D</color>
+
 
     <!-- Background color for the dinner category -->
     <color name="category_dinner">#DE5B49</color>
@@ -16,7 +18,11 @@
     <!-- Background color for the music and drinks category -->
     <color name="category_music_and_drinks">#E37B40</color>
 
+    <color name="all_categories">#324D5C</color>
+
     <!-- color for the text -->
-    <color name="text_color">#324D5C</color>
+    <color name="text_color">#F0CA4D</color>
+
+    <color name="second_text_color">#adc5d2</color>
 
 </resources>
