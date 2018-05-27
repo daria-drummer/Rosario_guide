@@ -39,9 +39,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         } else if (position == 1) {
             return new BreakfastFragment();
         } else if (position == 2) {
-            return new DinnerFragment()Fragment();
-        } else {
             return new IceCreamFragment();
+        } else {
+            return new DrinksMusicFragment();
         }
     }
 

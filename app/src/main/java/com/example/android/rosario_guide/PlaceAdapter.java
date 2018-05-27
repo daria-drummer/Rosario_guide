@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 /**
@@ -57,6 +59,8 @@ public class PlaceAdapter extends ArrayAdapter<Place>  {
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        imageView.setImageResource(currentPlace.getImageResourceId());
+
 
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
@@ -64,6 +68,7 @@ public class PlaceAdapter extends ArrayAdapter<Place>  {
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
+
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

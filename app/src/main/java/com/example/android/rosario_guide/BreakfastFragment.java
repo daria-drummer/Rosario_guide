@@ -28,11 +28,14 @@ public class BreakfastFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
+        places.add(new Place("Confiteria Nuria", "Calle Balcarce 1201", R.drawable.nuria));
+        places.add(new Place("Savoy Grand Cafe", "Calle San Lorenzo 1006", R.drawable.savoy));
+        places.add(new Place("Sablé Paris", "Calle San Lorenzo 1146", R.drawable.paris));
+        places.add(new Place("Georgia Coffee & Bar", "Calle Santa Fe 2018", R.drawable.georgia));
+        places.add(new Place("Crepas Rosario", "Oroño 29", R.drawable.crepas));
+        places.add(new Place("Balcarce Café", "Jujuy 1498", R.drawable.balcarce));
+        places.add(new Place("Café Charlotte", "Avenida Eva Peron 7974", R.drawable.charlotte));
+        places.add(new Place("Café Nolita", "Calle Paraguay 560", R.drawable.nolita));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

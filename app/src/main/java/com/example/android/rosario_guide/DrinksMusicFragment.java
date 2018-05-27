@@ -1,5 +1,6 @@
 package com.example.android.rosario_guide;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,10 +14,10 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class IceCreamFragment extends Fragment {
+public class DrinksMusicFragment extends Fragment {
 
 
-    public IceCreamFragment() {
+    public DrinksMusicFragment() {
         // Required empty public constructor
     }
 
@@ -28,18 +29,19 @@ public class IceCreamFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Natelli helados naturales", "Sargento Cabral 523", R.drawable.natelli));
-        places.add(new Place("Heladeria Esther", "Bulevar Orono y Jujuy", R.drawable.esther));
-        places.add(new Place("Marbet Helados", "Avenida Carlos Pellegrini 1050", R.drawable.marbet));
-        places.add(new Place("Yomo", "Avenida Pelegrini | Esquina Juan Manuel De Rosas\n", R.drawable.acorn));
-        places.add(new Place("De Buen Humor", "Calle Rioja 1560", R.drawable.buen_humor));
-        places.add(new Place("Heladería Freeshop", "Calle Gral San Martin 1203 | esquina Mendoza", R.drawable.freeshop));
-        places.add(new Place("Heladería Kiwi", "Juan José Paso 7702", R.drawable.kiwi));
-        places.add(new Place("Gianduia", "Avenida Salta 2412", R.drawable.gianduia));
+        places.add(new Place("Beatmemo", "Bvd. Oroño 107", R.drawable.beatmemo));
+        places.add(new Place("Rock & Feller's", "Boulevard Nicasio Orono 106", R.drawable.rock_and_fellers));
+        places.add(new Place("Johnny B Good", "Guemes 2197", R.drawable.johny));
+        places.add(new Place("Antares Rosario", "Avenida Carlos Pellegrini 1149", R.drawable.antares));
+        places.add(new Place("Chinchibira", "Santiago 101", R.drawable.chinchibira));
+        places.add(new Place("O'Connell's", "Calle Jujuy 2243", R.drawable.oconnels));
+        places.add(new Place("The Black Sheep", "Calle Italia 102", R.drawable.black_sheep));
+        places.add(new Place("Basquiat Street Pub", "Calle Alte G Brown 2265", R.drawable.street_pub));
+        places.add(new Place("Manush", "Güemes 2330", R.drawable.manush));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_ice_cream);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.category_music_and_drinks);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -54,3 +56,4 @@ public class IceCreamFragment extends Fragment {
     }
 
 }
+

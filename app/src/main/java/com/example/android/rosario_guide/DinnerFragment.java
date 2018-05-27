@@ -32,11 +32,16 @@ public class DinnerFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
-        places.add(new Place("Los Jardines", "España y el Río", R.drawable.acorn));
+        places.add(new Place("Los Jardines", "España y el Río", R.drawable.jardines));
+        places.add(new Place("Puerto Gaboto New", "Avenida Pellegrini 584", R.drawable.puerto));
+        places.add(new Place("Chicharra Asador a Las Brasas", "Pueyrredon 1", R.drawable.chicharra));
+        places.add(new Place("Bajada España", "Calle Espana y Barrancas del Río Parana", R.drawable.bajada));
+        places.add(new Place("Ceviche Rosario", "Jujuy 2378", R.drawable.ceviche));
+        places.add(new Place("Le Gulá", "Bv. Oroño y Av. Circunvalación", R.drawable.gula));
+        places.add(new Place("La cantina de Bruno", "Ovidio Lagos y Montevideo", R.drawable.bruno));
+        places.add(new Place("Viejo Balcon", "Avenida Guillermo Wheelwright 1815", R.drawable.balcon));
+        places.add(new Place("Aceto & Oliva", "Calle Gral Guemes 2238", R.drawable.oliva));
+        places.add(new Place("Refineria Parrilla Restaurant", "Rawson 443 Bis", R.drawable.parilla));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

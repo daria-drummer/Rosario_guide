@@ -23,7 +23,7 @@ public class Place {
      * @param contactInfo is the word in the Miwok language
      * @param imageResourceId is the drawable resource ID for the image associated with the word
      */
-    public Word(String nameOfThePlace, String contactInfo, int imageResourceId) {
+    public Place(String nameOfThePlace, String contactInfo, int imageResourceId) {
         mNameOfThePlace = nameOfThePlace;
         mContactInfo = contactInfo;
         mImageResourceId = imageResourceId;
